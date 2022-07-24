@@ -8,6 +8,9 @@ import com.vaadin.flow.router.BeforeEnterObserver;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
 
+import javax.annotation.security.PermitAll;
+
+@PermitAll
 @Route("login")
 @PageTitle("Login | CRM")
 public class LoginView extends VerticalLayout implements BeforeEnterObserver {
